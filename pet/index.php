@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pet-o-matic</title>
+  <title>Pet-o-matic: pets</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +27,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <style>
-  .users-list > li { width: 33%;}
+  .users-list > li { width: 100%;}
   .navbar-nav > .user-menu > .dropdown-menu > li.user-header {height: 140px;}
   </style>
 </head>
@@ -39,7 +39,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="../" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>P</b>-o-m</span>
       <!-- logo for regular state and mobile devices -->
@@ -61,14 +61,14 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="dist/img/user-1.jpg" class="user-image" alt="User Image">
+              <img src="../dist/img/user-1.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">Cool Tiger</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="dist/img/user-1.jpg" class="img-circle" alt="User Image">
+                <img src="../dist/img/user-1.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Cool Tiger
@@ -77,7 +77,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="pet/crear" class="btn btn-default btn-flat">Agregar mascota</a>
+                  <a href="../pet/crear" class="btn btn-default btn-flat">Agregar mascota</a>
                 </div>
                 <div class="pull-right">
                   <a href="#" class="btn btn-default btn-flat">Cerrar sesión</a>
@@ -99,7 +99,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user-1.jpg" class="img-circle" alt="User Image">
+          <img src="../dist/img/user-1.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Cool Tiger</p>
@@ -111,7 +111,7 @@
       <ul class="sidebar-menu">
         <li class="header">MENÚ PRINCIPAL</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
+        <li class="active"><a href="../"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
         <li class="header">MASCOTAS</li>
 
       </ul>
@@ -142,10 +142,9 @@
               <!-- USERS LIST -->
               <div class="box box-danger">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Minutos desde última comida</h3>
+                  <h3 class="box-title">Mascota</h3>
 
                   <div class="box-tools pull-right">
-                    <span class="label label-danger"><span class="pet-count">3</span> mascotas</span>
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
                     </button>
                     <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
@@ -165,7 +164,7 @@
                 </div>
 
                 <div class="box-footer text-center">
-                  <a href="pet/crear" class="uppercase">Crear mascota</a>
+                  <a href="../pet/crear" class="uppercase">Crear mascota</a>
                 </div>
 
                 <!-- /.box-body -->
@@ -175,59 +174,36 @@
             <!-- /.col -->
 
             <div class="info-boxes col-md-5">
+            </div>
+<style>
+.info-boxes2.inactive .toggle-active {
+  display: none!important;
+}
+.info-boxes2.active .toggle-inactive {
+  display: none!important;
+}
+</style>
+
+            <div class="info-boxes2 col-md-5">
               <!-- Info Boxes Style 2 -->
-              <div class="info-box bg-yellow">
-                <span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>
-
-                <div class="info-box-content">
-                  <span class="info-box-text">Doge</span>
-                  <span class="info-box-number">5,200</span>
-
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 50%"></div>
-                  </div>
-                      <span class="progress-description">
-                        50% Increase in 30 Days
-                      </span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
               <!-- /.info-box -->
-              <div class="info-box bg-green">
-                <span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>
+              <div class="info-box bg-aqua">
+                <span class="info-box-icon toggle-inactive"><i class="fa fa-close"></i></span>
+                <span class="info-box-icon toggle-active"><i class="fa fa-check"></i></span>
 
                 <div class="info-box-content">
-                  <span class="info-box-text">Grumphy</span>
-                  <span class="info-box-number">92,050</span>
+                  <span class="info-box-text">¿La mascota puede comer? </span>
+                  <span class="status info-box-number toggle-inactive">Inactivo</span>
+                  <span class="status info-box-number toggle-active">Activo</span>
 
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 20%"></div>
-                  </div>
                       <span class="progress-description">
-                        20% Increase in 30 Days
-                      </span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-              <div class="info-box bg-red">
-                <span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>
-
-                <div class="info-box-content">
-                  <span class="info-box-text">Lil Bub</span>
-                  <span class="info-box-number">114,381</span>
-
-                  <div class="progress">
-                    <div class="progress-bar" style="width: 70%"></div>
-                  </div>
-                      <span class="progress-description">
-                        70% Increase in 30 Days
+                        <button type="button" class="btn btn-block btn-success toggle-inactive">Permitirle alimentarse</button>
+                        <button type="button" class="btn btn-block btn-danger toggle-active">Prohibirle alimentarse</button>
                       </span>
                 </div>
                 <!-- /.info-box-content -->
               </div>
             </div>
-
       </div>
 
 
@@ -330,14 +306,16 @@
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 2.1.4 -->
-<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
+<script src="../dist/js/app.min.js"></script>
 
 <script>
   $(document).ready(function(){
+
+
 
     $.ajax({
       dataType: "json",
@@ -357,85 +335,103 @@
 
         $.each(pets,function(key,pet){
 
-          // Inserta menú lateral
-          $('.sidebar-menu').append(
-          '<li>'+
-            '<a href="pet?pet_id='+pet.pet_id+'">'+
-              '<i class="fa fa-paw"></i> <span>'+pet.name+' ('+pet.breed+')'+'</span>'+
-            '</a>'+
-          '</li>'
-          );
+            // Inserta menú lateral
+            $('.sidebar-menu').append(
+            '<li>'+
+              '<a href="../pet?pet_id='+pet.pet_id+'">'+
+                '<i class="fa fa-paw"></i> <span>'+pet.name+' ('+pet.breed+')'+'</span>'+
+              '</a>'+
+            '</li>'
+            );
+
+            if(pet.pet_id == <?php echo $_GET['pet_id']; ?>)
+            {
+
+              $('.info-boxes2').addClass((pet.status=="1"?'active':'inactive'));
 
           // Inserta infobox
-          $('.info-boxes').append(
-          '<div  class="info-box bg-'+color[pet.dispenser_id]+'">'+
-            '<span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>'+
+            $('.info-boxes').append(
+            '<div class="info-box bg-'+color[pet.dispenser_id]+'">'+
+              '<span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>'+
 
-            '<div class="info-box-content">'+
-              '<span class="info-box-text"><b>'+pet.name+' ('+pet.breed+')'+'</b> Último consumo:</span>'+
+              '<div class="info-box-content">'+
+                '<span class="info-box-text"><b>'+pet.name+' ('+pet.breed+')'+'</b> Último consumo:</span>'+
               '<span id="id'+pet.pet_id+'" class="info-box-number"></span>'+
 
-              '<div class="progress">'+
-                '<div class="progress-bar" style="width: '+Math.floor(Math.random()*50)*2+'%"></div>'+
+                '<div class="progress">'+
+                  '<div class="progress-bar" style="width: '+Math.floor(Math.random()*50)*2+'%"></div>'+
+                '</div>'+
+                    '<span class="progress-description">'+
+                      'Alimento tipo '+pet.dispenser_id+
+                    '</span>'+
               '</div>'+
-                  '<span class="progress-description">'+
-                    'Alimento tipo '+pet.dispenser_id+
-                  '</span>'+
-            '</div>'+
-          '</div>'
-          );
+            '</div>'
+            );
 
-          last_meal = [];
+            last_meal = [];
 
-          $.ajax({
-            dataType: "json",
-            url:'http://128.107.33.219:8080/stats/'+pet.pet_id+'/daily',
-            success: function(JSON){
+            $.ajax({
+              dataType: "json",
+              url:'http://128.107.33.219:8080/stats/'+pet.pet_id+'/daily',
+              success: function(JSON){
 
-              meals = JSON.Meals;
+                meals = JSON.Meals;
 
-              $.each(meals,function(key,meal) {
-                d = new Date(meal.end_date);
-                qty = meal.quantity;
+                $.each(meals,function(key,meal) {
+                  d = new Date(meal.end_date);
+                                  qty = meal.quantity;
 
-              });
+                });
 
-              var today = new Date();
-              var diff = today-d;
-              diffMins = Math.round( diff / (1000*60) );
+                var today = new Date();
+                var diff = today-d;
+                diffMins = Math.round( diff / (1000*60) );
 
-              last_meal[pet.pet_id] = diffMins;
-
-              $('#id'+pet.pet_id).html(qty+'grs');
-
-              /*console.debug(JSON);
-              console.debug(d.toDateString(),d.getUTCHours(),d.getUTCMinutes(),d.getUTCSeconds());
-              console.debug(diffMins,'diff: ',diff, 'today', today, 'petid', pet.pet_id, 'last_meal', last_meal);
-
-                console.debug('LAST MEAL', last_meal, 'DIFF MINS', diffMins);
-*/
-                // Inserta última comida
-                $('.users-list').append(
-                '<li><a href="pet?pet_id='+pet.pet_id+'">'+
-                  '<img src="dist/img/pet-'+pet.pet_id+'.jpg">'+
-                  '<div class="users-list-name">'+pet.name+'</div>'+
-                  '<span class="users-list-date">Hace '+last_meal[pet.pet_id]+'m</span>'+
-                '</a></li>'
-                );
+                last_meal[pet.pet_id] = diffMins;
+                              $('#id'+pet.pet_id).html(qty+'grs');
 
 
-            }
-          });
+                /*console.debug(JSON);
+                console.debug(d.toDateString(),d.getUTCHours(),d.getUTCMinutes(),d.getUTCSeconds());
+                console.debug(diffMins,'diff: ',diff, 'today', today, 'petid', pet.pet_id, 'last_meal', last_meal);
+
+                  console.debug('LAST MEAL', last_meal, 'DIFF MINS', diffMins);
+  */
+                  // Inserta última comida
+                  $('.users-list').append(
+                  '<li><a href="../pet?pet_id='+pet.pet_id+'">'+
+                    '<img src="../dist/img/pet-'+pet.pet_id+'.jpg">'+
+                    '<div class="users-list-name">'+pet.name+'</div>'+
+                    '<span class="users-list-date">Hace '+last_meal[pet.pet_id]+'m</span>'+
+                  '</a></li>'
+                  );
+
+
+              }
+            });
 
 
 
 
 
-          pet_count++;
+            pet_count++;
+
+          }
 
         });
 
         $('.pet-count').html(pet_count);
+
+
+        $('.info-boxes2 button').click(function(){
+
+
+
+          if($(this).hasClass('toggle-active'))
+            alert('Alimentación desactivada');
+          else
+            alert('Se le ha permitido alimentarse');
+        });
 
 
       }

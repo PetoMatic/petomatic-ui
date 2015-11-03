@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pet-o-matic</title>
+  <title>Crear pet: Pet-o-matic</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="../../" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>P</b>-o-m</span>
       <!-- logo for regular state and mobile devices -->
@@ -61,14 +61,14 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="dist/img/user-1.jpg" class="user-image" alt="User Image">
+              <img src="../../dist/img/user-1.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">Cool Tiger</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="dist/img/user-1.jpg" class="img-circle" alt="User Image">
+                <img src="../../dist/img/user-1.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Cool Tiger
@@ -77,7 +77,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="pet/crear" class="btn btn-default btn-flat">Agregar mascota</a>
+                  <a href="../../pet/crear" class="btn btn-default btn-flat">Agregar mascota</a>
                 </div>
                 <div class="pull-right">
                   <a href="#" class="btn btn-default btn-flat">Cerrar sesión</a>
@@ -99,7 +99,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user-1.jpg" class="img-circle" alt="User Image">
+          <img src="../../dist/img/user-1.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Cool Tiger</p>
@@ -111,7 +111,7 @@
       <ul class="sidebar-menu">
         <li class="header">MENÚ PRINCIPAL</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
+        <li class="active"><a href="../../"><i class="fa fa-link"></i> <span>Inicio</span></a></li>
         <li class="header">MASCOTAS</li>
 
       </ul>
@@ -165,7 +165,7 @@
                 </div>
 
                 <div class="box-footer text-center">
-                  <a href="pet/crear" class="uppercase">Crear mascota</a>
+                  <a href="../../pet/crear" class="uppercase">Crear mascota</a>
                 </div>
 
                 <!-- /.box-body -->
@@ -330,11 +330,11 @@
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 2.1.4 -->
-<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
+<script src="../../dist/js/app.min.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -360,7 +360,7 @@
           // Inserta menú lateral
           $('.sidebar-menu').append(
           '<li>'+
-            '<a href="pet?pet_id='+pet.pet_id+'">'+
+            '<a href="../../pet?pet_id='+pet.pet_id+'">'+
               '<i class="fa fa-paw"></i> <span>'+pet.name+' ('+pet.breed+')'+'</span>'+
             '</a>'+
           '</li>'
@@ -368,12 +368,12 @@
 
           // Inserta infobox
           $('.info-boxes').append(
-          '<div  class="info-box bg-'+color[pet.dispenser_id]+'">'+
+          '<div class="info-box bg-'+color[pet.dispenser_id]+'">'+
             '<span class="info-box-icon"><i class="ion ion-ios-paw-outline"></i></span>'+
 
             '<div class="info-box-content">'+
               '<span class="info-box-text"><b>'+pet.name+' ('+pet.breed+')'+'</b> Último consumo:</span>'+
-              '<span id="id'+pet.pet_id+'" class="info-box-number"></span>'+
+              '<span class="info-box-number">'+Math.floor(Math.random()*24)*50+'grs</span>'+
 
               '<div class="progress">'+
                 '<div class="progress-bar" style="width: '+Math.floor(Math.random()*50)*2+'%"></div>'+
@@ -396,8 +396,6 @@
 
               $.each(meals,function(key,meal) {
                 d = new Date(meal.end_date);
-                qty = meal.quantity;
-
               });
 
               var today = new Date();
@@ -405,8 +403,6 @@
               diffMins = Math.round( diff / (1000*60) );
 
               last_meal[pet.pet_id] = diffMins;
-
-              $('#id'+pet.pet_id).html(qty+'grs');
 
               /*console.debug(JSON);
               console.debug(d.toDateString(),d.getUTCHours(),d.getUTCMinutes(),d.getUTCSeconds());
@@ -416,8 +412,8 @@
 */
                 // Inserta última comida
                 $('.users-list').append(
-                '<li><a href="pet?pet_id='+pet.pet_id+'">'+
-                  '<img src="dist/img/pet-'+pet.pet_id+'.jpg">'+
+                '<li><a href="../../pet?pet_id='+pet.pet_id+'">'+
+                  '<img src="../../dist/img/pet-'+pet.pet_id+'.jpg">'+
                   '<div class="users-list-name">'+pet.name+'</div>'+
                   '<span class="users-list-date">Hace '+last_meal[pet.pet_id]+'m</span>'+
                 '</a></li>'
